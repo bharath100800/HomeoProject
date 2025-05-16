@@ -1,0 +1,12 @@
+<h2>Health Blog</h2>
+<form action="/blog" method="POST">
+  <input name="title" placeholder="Title"><br>
+  <textarea name="content" placeholder="Content"></textarea><br>
+  <button type="submit">Post Blog</button>
+</form>
+
+<% posts.forEach(post => { %>
+  <h3><%= post.title %></h3>
+  <p><%= post.content %></p>
+  <hr>
+<% }) %>

@@ -1,0 +1,4 @@
+<h2>All Appointments</h2>
+<% appointments.forEach(app => { %>
+  <p><%= app.name %> - <%= app.date %> at <%= app.time %> | <%= app.email %> | <%= app.message %></p>
+<% }) %>
